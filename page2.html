@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .down0{
+            display: flex;
+            justify-content: center;
+            font-family: sans-serif;
+            font-size: 30px;
+            font-weight: bolder;
+            flex-wrap: wrap;
+            color: white;
+            background-color: red;
+            align-items: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+        }
+        .down1{
+            display: flex;
+            justify-content: center;
+        }
+        .img{
+            background-image: url(images/Untitled.png);
+            width: 300px;
+            height: 300px;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-top: 70px;
+        }
+        .down2{
+            display: flex;
+            justify-content: center;
+            font-family: sans-serif;
+            cursor: no-drop;
+        }
+        .down3{
+            display: flex;
+            margin-top: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .down3 button,#a1{
+            text-decoration: none;
+            padding: 20px;
+            background-color: red;
+            color: white;
+            font-family: sans-serif;
+            font-weight: 500;
+            border-radius: 50px;
+            font-size: large;
+            border: none;
+            flex-wrap: wrap;
+        }
+        .down3 button #a1:hover{
+            color: black;
+            transition: all 0.5s ease-in-out;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .down4{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            color: red;
+            font-family: sans-serif;
+            font-weight: bolder;
+        }
+        .down5{
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgb(255, 25, 0);
+            padding: 20px;
+            margin-top: 20px;
+            justify-content: space-around;
+            border-radius: 10px;
+            font-family: sans-serif;
+            color: white;
+            align-items: center;
+        }
+        header6{
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        .loader {
+            width: 120px;
+            height: 22px;
+            border-radius: 40px;
+            color: #ff0000;
+            border: 2px solid;
+            position: relative;
+            text-align: center;
+        }
+        .loader::before {
+            content: "";
+            position: absolute;
+            margin: 2px;
+            width: 25%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            border-radius: inherit;
+            background: currentColor;
+            animation: l3 1s infinite linear;
+        }
+        @keyframes l3 {
+            50% {left:100%;transform: translateX(calc(-100% - 4px))}
+        }
+        footer1,footer2{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: rgb(255, 25, 0);
+            margin-top: 20px;
+        }
+        footer2{
+            margin-top: 20px;
+        }
+        #a2{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header1>
+        <div class="down0">
+            Download Games
+        </div>
+    </header1>
+    <header2 class="down1">
+        <div class="img"></div>
+    </header2>
+    <header3>
+        <div class="down2">
+            <h1>Click Here</h1>
+        </div>
+    </header3>
+    <header4>
+        <div class="down3">
+            <button><a id="a1" href="Games/TLauncher-Installer-1.6.8.exe" download="">Click Here To Download Your Game</a></button>
+        </div>
+    </header4>
+    <header5>
+        <div class="down4">
+            Your Downloading Will Be Started...
+        </div>
+    </header5>
+    <header6>
+        <div class="loader">Loading...</div>
+    </header6>
+    <header7 class="down5">
+        <footer1>
+            <h2>Links</h2>
+            <p><i class="fa-solid fa-house"></i> Home</p>
+            <p><i class="fa-solid fa-gamepad"></i> All Games</p>
+            <p><i class="fa-solid fa-down-long"></i> Updates</p>
+            <p><i class="fa-solid fa-address-card"></i> About Us</p>
+        </footer1>
+        <footer2>
+            <h2>Contact</h2>
+            <p><i class="fa-brands fa-instagram"></i> Instagram</p>
+            <p><i class="fa-brands fa-discord"></i> Discord</p>
+            <p><i class="fa-brands fa-snapchat"></i> Snapchat</p>
+            <p><i class="fa-brands fa-whatsapp"></i> Whatsapp</p>
+        </footer2>
+    </header7>
+</body>
+</html>
